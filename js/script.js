@@ -163,5 +163,44 @@ contact.addEventListener('mouseout', () => {
 });
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-   content1 = content2 = content3 = content4 = this.style.transform = 'rotate(0deg)'
+
+
+   home.addEventListener('mouseover', () => {
+      content1.style.boxShadow = '0 0 25px 2px #fff1';
+      content1.style.transform = 'rotate(0) ';
+   });
+
+   about.addEventListener('mouseover', () => {
+      content2.style.boxShadow = '0 0 25px 2px #fff1';
+      content2.style.transform = 'rotate(0) ';
+   });
+
+   portfolio.addEventListener('mouseover', () => {
+      content3.style.boxShadow = '0 0 25px 2px #fff1';
+      content3.style.transform = 'rotate(0) ';
+   });
+
+   contact.addEventListener('mouseover', () => {
+      content4.style.boxShadow = '0 0 25px 2px #fff1';
+      content4.style.transform = 'rotate(0) ';
+   });
+
+
+
+   burger.addEventListener('click', function () {
+
+      content1.addEventListener('mouseover', () => {
+         content1.style.boxShadow = '0 0 0 0 transparent';
+      });
+      content2.addEventListener('mouseover', () => {
+         content2.style.boxShadow = '0 0 0 0 transparent';
+      });
+      content3.addEventListener('mouseover', () => {
+         content3.style.boxShadow = '0 0 0 0 transparent';
+      });
+      content4.addEventListener('mouseover', () => {
+         content4.style.boxShadow = '0 0 0 0 transparent';
+      });
+   });
+
 };

@@ -47,7 +47,7 @@
       }
    }
 }
-@media (max-width: 414px) {
+@media (max-width: 413px) {
    .header__logo {
       font-size: 18px;
    }
@@ -64,6 +64,7 @@
       }
       .link {
          font-size: 28px;
+         user-select: none;
          & + .link {
             margin-top: 14px;
          }
