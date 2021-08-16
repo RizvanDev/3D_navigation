@@ -81,7 +81,6 @@ burger.addEventListener('click', function () {
    };
 
 
-
    content1.addEventListener('mouseover', () => {
       home.style.color = 'rgb(197, 47, 47)';
       content1.style.boxShadow = '0 0 5px 4px lightgreen';
@@ -114,6 +113,10 @@ burger.addEventListener('click', function () {
       contact.style.color = '#fff';
       content4.style.boxShadow = '0 0 25px 2px #fff1';
    });
+
+   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      content1 = content2 = content3 = content4 = this.style.boxShadow = '0 0 25px 2px #fff1'
+   };
 
 });
 
