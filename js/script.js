@@ -114,10 +114,6 @@ burger.addEventListener('click', function () {
       content4.style.boxShadow = '0 0 25px 2px #fff1';
    });
 
-   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      content1 = content2 = content3 = content4 = this.style.boxShadow = '0 0 25px 2px #fff1'
-   };
-
 });
 
 
@@ -166,3 +162,6 @@ contact.addEventListener('mouseout', () => {
    content4.style.transform = 'rotate(0deg)';
 });
 
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+   content1 = content2 = content3 = content4 = this.style.transform = 'rotate(0deg)'
+};
